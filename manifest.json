@@ -1,0 +1,27 @@
+{
+    "name": "WikiSnip",
+    "version": "1.0.1",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "jquery-3.5.1.min.js",
+                "tooltipster.bundle.min.js",
+                "tooltipster-selectableText.js",
+                "voca.min.js",
+                "content.js"
+            ],
+            "css": [
+                "tooltipster.bundle.min.css",
+                "tooltipster-sideTip-shadow.min.css"
+            ]
+        }
+    ],
+    "description": "Select text to display Wikipedia popups.",
+    "icons": {
+        "128": "logo.png"
+    }
+}
